@@ -15,6 +15,13 @@ use App\Http\Controllers\BookController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+/**
+ * @OA\Info(
+ *     title="API First Application",
+ *     version="1.0.0",
+ *     description="API First Application with Laravel, Sanctum, and Swagger"
+ * )
+ */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
